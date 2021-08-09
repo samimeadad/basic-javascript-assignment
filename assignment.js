@@ -8,7 +8,7 @@ Output: 3 (in mon)
 
 /* Problem-1: Function that convert sher to mon */
 function seerToMon(mySeer){
-    /* Input validation or error handling. if the input is NOT a NUMBER or a NEGATIVE NUMBER! Weight cannot be Negative! */
+    /* Input validation! if the input is NOT a NUMBER (String or anything else) or a NEGATIVE NUMBER! Weight cannot be Negative! */
     if(typeof(mySeer) != 'number' || mySeer < 0){
         return "WRONG INPUT! Please Input a Positive Weight! Negative Weight or Strings are NOT ALLOWED";
     }
@@ -25,6 +25,8 @@ let myMon = seerToMon(240);
 console.log(myMon);
 
 /* *************************Problem-1 Finished************************* */
+
+
 
 
 /*
@@ -45,9 +47,11 @@ Output: totalSalesAmount = (shirtUnitPrice * shirtQuantity) + (pantUnitPrice * p
 totalSalesAmount = 2700
 */
 
+/* *************************Problem-2************************* */
+
 /* Problem-2: Function to calculate the total sales cost of a shop! */
 function totalSales(shirtQuantity, pantQuantity, shoeQuantity){
-    //pre-defined unit price
+    /* pre-defined unit price */
     const shirtUnitPrice = 100;
     const pantUnitPrice = 200;
     const shoeUnitPrice = 500;
@@ -74,7 +78,7 @@ function totalSales(shirtQuantity, pantQuantity, shoeQuantity){
 let myTotalSalesAmount = totalSales(5, 8, 3);
 console.log(myTotalSalesAmount);
 
-// *************************Problem-2 Finished*************************
+/* *************************Problem-2 Finished************************* */
 
 
 /* 
@@ -99,13 +103,13 @@ function deliveryCost(tshirtQuantity){
         return "WRONG INPUT! Please input the quantity as a POSITIVE INTEGER! T-Shirt quantity cannot have a FRACTIONAL value, or NEGATIVE value, or STRING!";
     }
     
-    /* Total Delivery Cost if the T-Shirt Quanity is 0 to 100! */
+    /* Total Delivery Cost if the T-Shirt Quanity is 0 to 100 */
     else if(tshirtQuantity >= 0 && tshirtQuantity <= 100){
         let totalDeliveryCost = tshirtQuantity * 100;
         return totalDeliveryCost;
     }
 
-    /* Total Delivery Cost if the T-Shirt Quanity is 100 to 200! */
+    /* Total Delivery Cost if the T-Shirt Quanity is 100 to 200 */
     else if(tshirtQuantity > 100 && tshirtQuantity <=200){
         let costForFirstLot = 100 * 100;
         let costForSecondLot = (tshirtQuantity - 100) * 80;
@@ -113,7 +117,7 @@ function deliveryCost(tshirtQuantity){
         return totalDeliveryCost;
     }
 
-    /* Total Delivery Cost if the T-Shirt Quanity is more than 200! */
+    /* Total Delivery Cost if the T-Shirt Quanity is more than 200 */
     else{
         let costForFirstLot = 100 * 100;
         let costForSecondLot = 100 * 80;
@@ -121,7 +125,6 @@ function deliveryCost(tshirtQuantity){
         let totalDeliveryCost = costForFirstLot + costForSecondLot + costForThirdLot;
         return totalDeliveryCost;
     }
-    
 }
 
 /* Check the result by printing the output outside the function! */
@@ -169,8 +172,7 @@ function perfectFriend(friendsNameArr){
         }
         /* return the required value as string */
         return perfectName;
-    }
-    
+    } 
 }
 
 /* Declare an array containing my friends' name! */
