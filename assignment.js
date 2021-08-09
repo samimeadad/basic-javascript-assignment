@@ -20,7 +20,7 @@ function seerToMon(mySeer){
     }
 }
 
-//Check the result by prinint the output outside the function
+//Check the result by printing the output outside the function
 let myMon = seerToMon(0);
 console.log(myMon);
 
@@ -70,8 +70,8 @@ function totalSales(shirtQuantity, pantQuantity, shoeQuantity){
     }
 }
 
-//Check the result by prinint the output outside the function
-let myTotalSalesAmount = totalSales(5, '8', 3);
+//Check the result by printing the output outside the function
+let myTotalSalesAmount = totalSales(5, 8, 3);
 console.log(myTotalSalesAmount);
 
 // *************************Problem-2 Finished*************************
@@ -124,7 +124,7 @@ function deliveryCost(tshirtQuantity){
     
 }
 
-//Check the result by prinint the output outside the function!
+//Check the result by printing the output outside the function!
 let myTotalDeliveryCost = deliveryCost(160);
 console.log(myTotalDeliveryCost);
 
@@ -177,7 +177,7 @@ function perfectFriend(friendsNameArr){
 let myFriendsName = ['sami', 'Farmee', 'Arishamma', 'Arashabba', 'tasnuva', 'Ozair Alam', 'Rasel', 'Hasan', 'Hussain Rubel', 'Rajib', 'Shipul', 'Wahid'];
 let myPerfectFriend = perfectFriend(myFriendsName);
 
-//Check the result by prinint the output outside the function!
+//Check the result by printing the output outside the function!
 console.log(myPerfectFriend);
 
 // *************************Problem-4 Finished*************************
